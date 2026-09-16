@@ -34,8 +34,8 @@
   become_user: postgres
 
 - name: Set PostgreSQL to listen on all interfaces
-  community.postgresql.postgresql_alter_system:
-    parameter: listen_addresses
+  community.postgresql.postgresql_set:
+    name: listen_addresses
     value: '*'
   become_user: postgres
   notify:
