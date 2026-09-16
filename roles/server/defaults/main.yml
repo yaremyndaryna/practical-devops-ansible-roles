@@ -1,0 +1,5 @@
+---
+php_version: "8.4"
+apache_user: "www-data"
+app_path: "/var/www/html"
+app_repo: "https://github.com/Practical-DevOps/app-for-devops"
