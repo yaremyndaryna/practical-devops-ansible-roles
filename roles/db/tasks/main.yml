@@ -47,7 +47,7 @@
     contype: host
     users: "{{ db_user }}"
     source: all
-    database: "{{ db_name }}"
+    databases: "{{ db_name }}"
     method: scram-sha-256
     create: true
   become_user: postgres
